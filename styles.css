@@ -1,0 +1,37 @@
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+@import url("https://fonts.googleapis.com/css2?family=Eater&family=Oswald&display=swap");
+/* basic elements */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.88889;
+  color: white;
+  background: #000000;
+  margin: 2em;
+  padding: 2em;
+}
+
+p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+h1, h2, h3 {
+  font: "Eater", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #fd9702;
+}
+
+/* specific divs */
+header, .main, .sidebar {
+  border: 2px solid #ae03ff;
+  padding: 1em;
+  margin: 2em 0 2em 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

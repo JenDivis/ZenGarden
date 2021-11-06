@@ -1,0 +1,55 @@
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+//Imports
+@import url('https://fonts.googleapis.com/css2?family=Eater&family=Oswald&display=swap');
+
+
+//Color Palette
+$color-1: #ff7100; // Dark Orange
+$color-2: #fd9702; // Light Orange
+$color-3: #e102ff; // Light Purple
+$color-4: #ae03ff; // Darker Purple
+$color-5: #000000; // Black
+
+//Fonts
+$primary-font: 'Eater', cursive;
+$secondary-font: 'Oswald', sans-serif;
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font-family: $secondary-font;
+	line-height: 1.88889;
+	color: white; 
+	background: $color-5; 
+	margin: 2em; 
+	padding: 2em;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h1, h2, h3 { 
+	font: $primary-font;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: $color-2;
+	}
+
+/* specific divs */
+header, .main, .sidebar {
+	border: 2px solid $color-4;
+	padding: 1em;
+	margin: 2em 0 2em 0;
+}
+
+
+
+
+
+
