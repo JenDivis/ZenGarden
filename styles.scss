@@ -10,7 +10,7 @@ $color-1: #ff7100; // Dark Orange
 $color-2: #fd9702; // Light Orange
 $color-3: #e102ff; // Light Purple
 $color-4: #ae03ff; // Darker Purple
-$color-5: #000000; // Black
+$color-5:#000000; // Black
 
 //Fonts
 $primary-font: 'Eater', cursive;
@@ -55,12 +55,26 @@ header, .main, .sidebar {
 		grid-template-columns: repeat(4, 1fr);
 	}
 
-	header, .summary {
-		grid-column: 1 / 5;
+	.intro {
+		grid-row: 1/ span 2;
+		grid-column: 1 / span 4;
+		display:grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: auto auto auto;
+	}
+	header {
+		grid-column: 1 / span 5;
+		text-align: center;
 	}
 
-	.preamble {
-		grid-column: 1 / 2;
+	.summary, .summary p {
+		grid-column: 1 / span 4;
+		text-align: center;
+	}
+
+	.preamble, .preamble p {
+		grid-column: 1/ span 4;
+		text-align: center;
 	}
 
 	.main {
@@ -68,7 +82,7 @@ header, .main, .sidebar {
 	}
 
 	.sidebar {
-		grid-column: 4 / 5;
+		border: none;
 	}
 }
 
