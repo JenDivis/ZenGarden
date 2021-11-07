@@ -34,4 +34,27 @@ header, .main, .sidebar {
   margin: 2em 0 2em 0;
 }
 
+@media only screen and (min-width: 1024px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  header, .summary {
+    grid-column: 1/5;
+  }
+
+  .preamble {
+    grid-column: 1/2;
+  }
+
+  .main {
+    grid-column: 2/4;
+  }
+
+  .sidebar {
+    grid-column: 4/5;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
