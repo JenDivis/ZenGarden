@@ -1,5 +1,6 @@
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-@import url("https://fonts.googleapis.com/css2?family=Eater&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eater&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Eater&family=Freckle+Face&display=swap");
 /* basic elements */
 html {
   margin: 0;
@@ -7,17 +8,17 @@ html {
 }
 
 body {
-  font-family: "Oswald", sans-serif;
   line-height: 1.88889;
+  font-size: 2vw;
   color: white;
-  background: #000000;
-  margin: 2em;
+  background: linear-gradient(to bottom, #1A1110 0%, black 100%);
   padding: 2em;
 }
 
 p {
   margin-top: 0;
   text-align: justify;
+  font-family: "Oswald", sans-serif;
 }
 
 h1, h2, h3 {
@@ -27,6 +28,11 @@ h1, h2, h3 {
   color: #fd9702;
 }
 
+.intro h1 {
+  font-size: 8vw;
+  margin: 0%;
+}
+
 /* specific divs */
 header, .main, .sidebar {
   border: 2px solid #ae03ff;
@@ -34,52 +40,98 @@ header, .main, .sidebar {
   margin: 2em 0 2em 0;
 }
 
+a {
+  color: #e102ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ae03ff;
+}
+
+footer a {
+  padding: 1rem;
+  margin: auto;
+}
+
+.extra1 {
+  position: relative;
+  width: 11rem;
+  height: 20rem;
+  background: #ff7100;
+  border-radius: 5rem/10rem;
+  border: #1A1110 1px solid;
+}
+
+.extra1::before {
+  position: absolute;
+  content: "";
+  width: 10rem;
+  height: 19.5rem;
+  background: #ff7100;
+  border-radius: 4rem/10rem;
+  left: 75px;
+  top: 0.5rem;
+  border-top: #1A1110 1px solid;
+  border-bottom: #1A1110 1px solid;
+}
+
+.extra1::after {
+  position: absolute;
+  content: "";
+  width: 11rem;
+  height: 20rem;
+  background: #ff7100;
+  border-radius: 5rem/10rem;
+  left: 140px;
+  border-right: #1A1110 1px solid;
+}
+
 @media only screen and (min-width: 1024px) {
   .page-wrapper {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
+
   .intro {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1/ span 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / span 4;
-    display: -ms-grid;
+    grid-row: 1/span 2;
+    grid-column: 1/span 4;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto;
   }
+
   header {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1 / span 5;
+    grid-column: 1/span 5;
     text-align: center;
+    padding: 50px;
   }
+
   .summary, .summary p {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1 / span 4;
+    grid-column: 1/span 4;
     text-align: center;
   }
+
+  header, .summary {
+    grid-column: 1/span 4;
+  }
+
   .preamble, .preamble p {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-column: 1/ span 4;
+    grid-column: 1/span 4;
     text-align: center;
   }
+
   .main {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2 / 4;
+    grid-column: 2/4;
   }
+
   .sidebar {
     border: none;
   }
+
+  footer {
+    grid-column: span;
+  }
 }
+
 /*# sourceMappingURL=styles.css.map */
