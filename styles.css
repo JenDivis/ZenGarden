@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Eater&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Eater&family=Freckle+Face&display=swap");
 /* basic elements */
 html {
   margin: 0;
@@ -9,7 +8,7 @@ html {
 
 body {
   line-height: 1.88889;
-  font-size: 2vw;
+  font-size: 4vw;
   color: white;
   background: linear-gradient(to bottom, #1A1110 0%, black 100%);
   padding: 2em;
@@ -33,11 +32,19 @@ h1, h2, h3 {
   margin: 0%;
 }
 
+header {
+  text-align: center;
+}
+
 /* specific divs */
-header, .main, .sidebar {
+header, .main, .sidebar, .preamble {
   border: 2px solid #ae03ff;
   padding: 1em;
   margin: 2em 0 2em 0;
+}
+
+.summary p {
+  text-align: center;
 }
 
 a {
@@ -52,6 +59,7 @@ a:hover {
 footer a {
   padding: 1rem;
   margin: auto;
+  text-align: center;
 }
 
 .extra1 {
@@ -88,6 +96,10 @@ footer a {
 }
 
 @media only screen and (min-width: 1024px) {
+  body {
+    font-size: 2vw;
+  }
+
   .page-wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -103,7 +115,6 @@ footer a {
 
   header {
     grid-column: 1/span 5;
-    text-align: center;
     padding: 50px;
   }
 
