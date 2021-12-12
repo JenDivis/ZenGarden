@@ -7,7 +7,6 @@ html {
 }
 
 body {
-  line-height: 1.88889;
   font-size: 4vw;
   color: white;
   background: linear-gradient(to bottom, #1A1110 0%, black 100%);
@@ -50,10 +49,12 @@ header, .main, .sidebar, .preamble {
 a {
   color: #e102ff;
   text-decoration: none;
+  transition: font-size 0.5s;
 }
 
 a:hover {
   color: #ae03ff;
+  font-size: 105%;
 }
 
 footer a {
@@ -138,6 +139,7 @@ footer a {
 
   .sidebar {
     border: none;
+    font-size: 75%;
   }
 
   footer {
